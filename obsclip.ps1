@@ -1,5 +1,6 @@
 ﻿$allow_obs_outside = $true
-$launch_obs_once = $false
+
+
 
 while ($true) 
 {
@@ -23,6 +24,7 @@ while ($true)
         {
             $obs | Stop-Process
             $obs_folder = Get-Content ($env:APPDATA+"\obs-studio\basic\profiles\Untitled\basic.ini") | Where-Object {$_ -match "="} | ConvertFrom-StringData
+            Get-ChildItem $obs_folder.FilePath *.mkv | ForEach-Object {Remove-Item $_.FullName}
             Start-Process $obs_folder.FilePath
             $allow_obs_outside = $false
         }

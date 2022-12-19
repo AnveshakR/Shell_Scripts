@@ -1,0 +1,3 @@
+RainbowSix=r6
+firefox=ff
+vlc=vlc
