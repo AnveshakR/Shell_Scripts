@@ -1,3 +1,5 @@
+exe name=scene name
 RainbowSix=r6
-firefox=ff
-vlc=vlc
+cod=cod
+destiny2=d2
+valheim=valheim
