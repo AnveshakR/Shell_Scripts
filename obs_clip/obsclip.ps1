@@ -3,8 +3,9 @@ $active_process = $null # stores the process variable of the active process
 $active_process_name = "" # stores the name of the active process
 $active_scene = $null # store the scene name of the active process
 
-$Path = ".\values.txt"
+$Path = $PSScriptRoot+"\values.txt"
 $data = Get-Content $Path
+
 $process_names = @()
 $scene_names = @()
 
