@@ -12,7 +12,7 @@ $process | Get-Process | Format-Table ProcessName, Id -AutoSize
 $id = [Microsoft.VisualBasic.Interaction]::InputBox("Which Id" ,"Enter Id number")
 
 if($id -eq "all")
-{Get-Process -Name $text | Stop-Process -Force}
+{Get-Process -Name *$text* | Stop-Process -Force}
 
 else
 {Get-Process -Id $id | Stop-Process -Force}

@@ -1,5 +1,4 @@
 exe name=scene name
 RainbowSix=r6
-cod=cod
-destiny2=d2
 valheim=valheim
+Zero Hour=Zero Hour
